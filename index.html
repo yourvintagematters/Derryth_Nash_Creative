@@ -1,13 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Vintage Matters</title>
-    <link rel="stylesheet" href="styles.css">
-    <img src="logo_white_bground.jpg" alt="Logo">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Derryth Nash Creative</title>
+  <style>
+    :root {
+      --primary: #b30051;
+      --accent: #a8c41d;
+      --light: #f7adc3;
+      --neutral: #f4f4f4;
+      --text: #222;
+      --card: #fff;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--neutral);
+      color: var(--text);
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2em;
+    }
+    header {
+      text-align: center;
+      padding-bottom: 2em;
+    }
+    .logo {
+      max-width: 160px;
+      margin: 1em auto;
+      display: block;
+    }
+    h1 {
+      font-size: 2.5em;
+      color: var(--primary);
+      margin-bottom: 0.2em;
+    }
+    .services {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5em;
+    }
+    .service {
+      background: var(--card);
+      border-left: 8px solid var(--accent);
+      border-radius: 8px;
+      padding: 1.5em;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    }
+    .service h2 {
+      color: var(--primary);
+      margin: 0 0 0.4em 0;
+    }
+    .service .desc {
+      font-size: 1em;
+      color: var(--text);
+      margin-bottom: 0.8em;
+    }
+    .service-img {
+      max-width: 100%;
+      max-height: 220px;
+      border-radius: 6px;
+      margin-top: 0.5em;
+      border: 2px solid var(--light);
+      object-fit: cover;
+    }
+    footer {
+      text-align: center;
+      background: var(--card);
+      padding: 2em 0 1em 0;
+      margin-top: 2em;
+      border-top: 4px solid var(--primary);
+      font-size: 1.1em;
+      color: var(--primary);
+    }
+    @media (max-width: 500px) {
+      .container { padding: 1em; }
+      .service { padding: 1em; }
+    }
+  </style>
 </head>
 <body>
-    <!-- Body content here -->
+  <div class="container">
+    <header>
+            <img src="logo_white_bground.jpg" alt="Derryth Nash Creative Logo" class="logo">
+      <h1>Derryth Nash Creative</h1>
+    </header>
+    <section class="services">
+      
+      <div class="service">
+        <h2>Acoustic Duo – Derryth & Dino</h2>
+        <div class="desc">
+          Guitar and vocals featuring Derryth Nash (vocals) & Dino Ciuffetello (guitar), delivering a diverse range of music from Norah Jones to Queen.
+        </div>
+        <!-- Optional: Add an image below -->
+        <!-- <img src="duo.jpg" alt="Derryth & Dino performing" class="service-img"> -->
+      </div>
+      
+      <div class="service">
+        <h2>Creative Workshop Facilitator</h2>
+        <div class="desc">
+          Inspiring groups and individuals with hands-on creative workshops designed to unlock imagination, encourage self-expression, and build confidence through art and music.
+        </div>
+        <!-- <img src="workshop.jpg" alt="Workshop facilitation" class="service-img"> -->
+      </div>
+
+      <div class="service">
+        <h2>Home Staging</h2>
+        <div class="desc">
+          Specialising in using your existing furniture to beautifully stage your home for sale, allowing you to continue living comfortably while presenting your space at its very best.
+        </div>
+        <!-- <img src="homestaging.jpg" alt="Home staging example" class="service-img"> -->
+      </div>
+      
+      <div class="service">
+        <h2>Artist & Creator</h2>
+        <div class="desc">
+          Exploring multi-media art forms and incorporating my love of music into visual creations, bringing vibrant, soulful pieces to life.
+        </div>
+        <!-- <img src="art.jpg" alt="Sample artwork" class="service-img"> -->
+      </div>
+      
+      <div class="service">
+        <h2>Daily Whispers App</h2>
+        <div class="desc">
+          Creator of Daily Whispers, an app designed to promote love, connection, and well-being through thoughtful daily prompts and inspiration.
+        </div>
+        <!-- <img src="dailywhispers.jpg" alt="Daily Whispers App screenshot" class="service-img"> -->
+      </div>
+    </section>
+
+    <footer>
+      <strong>Derryth Nash</strong><br>
+      <a href="mailto:derrythnash@gmail.com" style="color:var(--primary);text-decoration:underline;">derrythnash@gmail.com</a>
+    </footer>
+  </div>
 </body>
 </html>

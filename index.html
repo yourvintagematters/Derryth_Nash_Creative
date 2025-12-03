@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Derryth Nash Creative</title>
   <style>
-    :root {
+        :root {
       --primary: #b30051;
       --accent: #a8c41d;
       --light: #f7adc3;
@@ -23,6 +23,11 @@
       max-width: 800px;
       margin: 0 auto;
       padding: 2em;
+    }
+    .column {
+      flex: 1;             /* each column takes equal width */
+      padding: 20px;
+      border: 1px solid #ccc;
     }
     header {
       text-align: center;
@@ -89,12 +94,14 @@
 </head>
 <body>
   <div class="container">
+
     <header>
             <img src="logo_white_bground.jpg" alt="Derryth Nash Creative Logo" class="logo">
       <h1>Life: Music, Art, and Human Connection</h1>
     </header>
     <section class="services">
-      
+  <div class="column">
+   
       <div class="service">
         <h2>Acoustic Musical Duo – Derryth & Dino</h2>
         <div class= "h3>Acoustic warmth for moments that matter. </div>
@@ -122,6 +129,7 @@
         </div>
         <!-- <img src="homestaging.jpg" alt="Home staging example" class="service-img"> -->
       </div>
+<div class="column">
       
       <div class="service">
         <h2>Artist & Creator</h2>

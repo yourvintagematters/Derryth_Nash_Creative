@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Derryth Nash Creative</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+  <style>
+  :root {
+  --primary: #b30051;
+  --accent: #a8c41d;
+  --light: #d6adb9;
+  --neutral: #dedcd0;
+  --text: #222;
+  --card: #fff;
+}
+
+body {
+  margin: 0;
+  font-family: Verdana, sans-serif;
+  background: var(--card);
+  color: var(--text);
+}
+
+header {
+  text-align: center;
+  padding: 0;
+}
+.headings {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* three equal columns */
+  text-align: center;
+  padding: .0em;
+  gap: .5em;
+}
+
+.headings h1 {
+font-family: Sacramento, cursive;
+color: var(--primary);
+font-size: 4.5em;
+  margin: 0;
+}
+
+.logo {
+  max-width: 450px;
+  margin: 0.2em auto 0 auto; /* top | left/right | bottom */
+  display: block;
+}
+
+
+h1 {
+font-size: 4.5em;
+font-family: Sacramento, cursive;
+color: var(--primary);
+margin-bottom: 0em;
+}
+
+/* Three-column layout for services */
+.services {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;/* three equal columns */
+  gap: 1.5em;
+  padding: .2em;
+}
+
+.service {
+  background: var(--neutral);
+  border-top: 12px solid var(--accent);
+  border-radius: 8px;
+  padding: 1em;
+  box-shadow: 0;
+  text-align: center;
+  
+  
+}
+
+.service h2 {
+ font-size: 1.2em; color: var(--primary);
+  margin: 0 0 0.4em 0;
+}
+
+.service h3 {
+  font-size: .9em;
+  color: var(--text);
+  margin-bottom: 0.1em;
+  font-style: italic;
+}
+
+.service .desc {
+  font-size: .75em;
+  color: var(--text);
+  margin-bottom: 0.8em;
+}
+
+.service-img {
+  max-width: 100%;
+  max-height: 135px;
+  border-radius: 6px;
+  margin-top: 0.5em;
+  object-fit: cover;
+}
+
+footer {
+  text-align: center;
+  background: var(--card);
+  padding: 2em 0 1em 0;
+  margin-top: 2em;
+  border-top: 4px solid var(--primary);
+  font-size: .8em;
+  color: var(--primary);
+}
+.contact-btn {
+  display: inline-block;
+  margin-top: 1em;
+  padding: 10px 20px;
+  background-color: var(--accent);
+  color: var(--text);
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+  background-color: var(--light);
+  color: var(--text);
+}
+
+/* Responsive: stack services on small screens */
+@media (max-width: 700px) {
+  .services {
+    grid-template-columns: 1fr; /* single column on mobile */
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo_white_bground.jpg" alt="Derryth Nash Creative Logo" class="logo">
+    <section class="headings">
+    <h1>Music</h1>
+    <h1>Art</h1>
+    <h1>Connection</h1>
+  </section>
+</header>
+
+
+  <section class="services">
+       <div class="service">
+      <h2>Fields of Gold</h2>
+            <h3>"You'll forget the sun in her jealous sky, as you walk in fields of gold".</h3>
+      <br>
+         <div class="desc">
+       An acrylic piece inspired by Derryth's love of rural settings and the gorgeous song covered by many artsists including Eva Cassidy and Sting.
+      </div>
+       <img src="?.jpg" alt="Acoustic Duo" class="service-img">
+       
+       
+
+
+           <br><a href="mailto:derrythnash@gmail.com?subject=Live%20Music%20Enquiry" class="contact-btn">Contact</a>
+    </div>
+   
+     <div class="service">
+       <h2>Fields of Gold</h2>
+            <h3>"You'll forget the sun in her jealous sky, as you walk in fields of gold".</h3>
+      <br>
+         <div class="desc">
+       An acrylic piece inspired by Derryth's love of rural settings and the gorgeous song covered by many artsists including Eva Cassidy and Sting.
+      </div>
+       <img src="?.jpg" alt="Acoustic Duo" class="service-img">
+         <br><a href="mailto:derrythnash@gmail.com?subject=Creative%20Workshop%20Enquiry" class="contact-btn">Contact</a>         
+    </div>
+
+    
+<div class="service">
+         <h2>Fields of Gold</h2>
+            <h3>"You'll forget the sun in her jealous sky, as you walk in fields of gold".</h3>
+      <br>
+         <div class="desc">
+       An acrylic piece inspired by Derryth's love of rural settings and the gorgeous song covered by many artsists including Eva Cassidy and Sting.
+      </div>
+       <img src="?.jpg" alt="Acoustic Duo" class="service-img">
+    <br><a href="mailto:derrythnash@gmail.com?subject=Hug%20Therapy%20Enquiry" class="contact-btn">Contact</a>
+      
+       
+      </div>
+ <div class="service">
+        <h2>Fields of Gold</h2>
+            <h3>"You'll forget the sun in her jealous sky, as you walk in fields of gold".</h3>
+      <br>
+         <div class="desc">
+       An acrylic piece inspired by Derryth's love of rural settings and the gorgeous song covered by many artsists including Eva Cassidy and Sting.
+      </div>
+       <img src="?.jpg" alt="Acoustic Duo" class="service-img">
+   <br><a href="mailto:derrythnash@gmail.com?subject=Home%20Staging%20Enquiry" class="contact-btn">Contact</a>
+
+             </div>
+
+    
+   
+   
+
+      <div class="service">
+        <h <h2>Fields of Gold</h2>
+            <h3>"You'll forget the sun in her jealous sky, as you walk in fields of gold".</h3>
+      <br>
+         <div class="desc">
+       An acrylic piece inspired by Derryth's love of rural settings and the gorgeous song covered by many artsists including Eva Cassidy and Sting.
+      </div>
+       <img src="?.jpg" alt="Acoustic Duo" class="service-img">
+          <br><a href="mailto:derrythnash@gmail.com?subject=Art%20Enquiry" class="contact-btn">Contact</a>
+
+      </div>
+
+
+      
+      <div class="service">
+        <h2>Fields of Gold</h2>
+            <h3>"You'll forget the sun in her jealous sky, as you walk in fields of gold".</h3>
+      <br>
+         <div class="desc">
+       An acrylic piece inspired by Derryth's love of rural settings and the gorgeous song covered by many artsists including Eva Cassidy and Sting.
+      </div>
+       <img src="?.jpg" alt="Acoustic Duo" class="service-img">
+           <br><a href="mailto:derrythnash@gmail.com?subject=Daily%20Whispers%20Enquiry" class="contact-btn">Contact</a>
+        
+      
+       
+      </div>
+ 
+    </section>
+
+    <footer>
+      <strong>Derryth Nash</strong><br>
+      <a href="mailto:derrythnash@gmail.com" style="color:var(--primary);text-decoration:underline;">derrythnash@gmail.com</a>
+    </footer>
+  </div>
+</body>
+</html>

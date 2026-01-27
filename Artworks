@@ -49,24 +49,25 @@ font-size: 4.5em;
 
 
 h1 {
-font-size: 4.5em;
-font-family: Sacramento, cursive;
-color: var(--primary);
-margin-bottom: 0em;
+  font-size: 4.5em;
+  font-family: Sacramento, cursive;
+  color: var(--primary);
+  margin-bottom: 0em;
 }
 
 /* Three-column layout for services */
 .services {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;/* three equal columns */
+  grid-template-columns: 1fr 1fr 1fr; /* three equal columns */
   gap: 1.5em;
   padding: .2em;
 }
+
+/* Mobile adjustments */
 @media (max-width: 600px) {
   h1 {
-    font-size: 1.5em; /* pick any smaller size you like */
+    font-size: 1.5em; /* smaller heading on phones */
   }
-}
 
   .services {
     grid-template-columns: 1fr; /* stack into one column on phones */
@@ -80,12 +81,11 @@ margin-bottom: 0em;
   padding: 1em;
   box-shadow: 0;
   text-align: center;
-  
-  
 }
 
 .service h2 {
- font-size: 1.2em; color: var(--primary);
+  font-size: 1.2em;
+  color: var(--primary);
   margin: 0 0 0.4em 0;
 }
 

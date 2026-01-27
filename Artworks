@@ -62,6 +62,16 @@ margin-bottom: 0em;
   gap: 1.5em;
   padding: .2em;
 }
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.5em; /* smaller heading for phones */
+  }
+
+  .services {
+    grid-template-columns: 1fr; /* stack into one column on phones */
+  }
+}
 
 .service {
   background: var(--neutral);

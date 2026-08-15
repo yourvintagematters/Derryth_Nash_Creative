@@ -14,35 +14,31 @@
   --text: #222;
   --card: #fff;
 }
-a {
-  text-decoration: none;
-}
 
 body {
   margin: 0;
   font-family: Verdana, sans-serif;
   background: var(--card);
   color: var(--text);
-  text-align: left;
 }
 
 header {
   text-align: center;
-  padding: 0;text-align: left;
+  padding: 0;
 }
 .headings {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; /* three equal columns */
   text-align: center;
   padding: .0em;
-  gap: .5em;text-align: left;
+  gap: .5em;
 }
 
 .headings h1 {
 font-family: Sacramento, cursive;
 color: var(--primary);
 font-size: 4.5em;
-  margin: 0;text-align: left;
+  margin: 0;
 }
 
 .logo {
@@ -53,31 +49,18 @@ font-size: 4.5em;
 
 
 h1 {
-  font-size: 4.5em;
-  font-family: Sacramento, cursive;
-  color: var(--primary);
-  margin-bottom: 0em;
-  text-align: left;
+font-size: 4.5em;
+font-family: Sacramento, cursive;
+color: var(--primary);
+margin-bottom: 0em;
 }
 
 /* Three-column layout for services */
 .services {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr; /* three equal columns */
+  grid-template-columns: 1fr 1fr 1fr;/* three equal columns */
   gap: 1.5em;
   padding: .2em;
-}
-
-/* Mobile adjustments */
-@media (max-width: 600px) {
-  .headings h1 {
-    font-size: 1.5em;
-  }
-
-
-  .services {
-    grid-template-columns: 1fr; /* stack into one column on phones */
-  }
 }
 
 .service {
@@ -87,13 +70,13 @@ h1 {
   padding: 1em;
   box-shadow: 0;
   text-align: center;
+  
+  
 }
 
 .service h2 {
-  font-size: 1.2em;
-  color: var(--primary);
+ font-size: 1.2em; color: var(--primary);
   margin: 0 0 0.4em 0;
-  text-align: left;
 }
 
 .service h3 {
@@ -101,7 +84,6 @@ h1 {
   color: var(--text);
   margin-bottom: 0.1em;
   font-style: italic;
-  text-align: left;
 }
 
 .service .desc {
@@ -116,15 +98,6 @@ h1 {
   border-radius: 6px;
   margin-top: 0.5em;
   object-fit: cover;
-  transition: transform 0.3s ease;  /* smooth animation */
-  cursor: pointer;
-}
-
-.service-img:hover {
-  transform: scale(3.5);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-
-  
 }
 
 footer {
@@ -158,26 +131,25 @@ footer {
   .services {
     grid-template-columns: 1fr; /* single column on mobile */
   }
-
-  /* Make paragraph text smaller on phones */
-@media (max-width: 700px) {
-  .desc p {
-    font-size: 0.8em;
-    line-height: 1.4;
-  }
-}
-
 }
 
   </style>
 </head>
 <body>
   <header>
-    <a href="https://yourvintagematters.github.io/Derryth_Nash_Creative/" style="text-decoration: none;"> <img src="logo_white_bground.jpg" alt="Derryth Nash Creative Logo" class="logo"> </a>
-    
-    <div class="desc" style="grid-column: 1 / -1;">
+    <img src="logo_white_bground.jpg" alt="Derryth Nash Creative Logo" class="logo">
+    <section class="headings">
+    <h2>Daily Whispers Privacy Policy</h2>
+  </section>
+</header>
 
-  <h2>Privacy Policy</h2>
+
+  <section class="services">
+       
+
+      
+      <div class="service">
+        
 
   <p>
     This app does not collect, store, or share any personal information for use other than its original purpose.
@@ -362,23 +334,18 @@ footer {
     If you have questions about this policy, you can contact the developer at:
     <a href="mailto:derryth@bigpond.com">derryth@bigpond.com</a>
 </p>
-  
 
- </div>
-    <section class="headings">
-<h1>&nbsp;</h1>      <h1>Artwork</h1>  <h1>&nbsp;</h1>  
+
       
-    
-  </section>
-</header>
-
-
+       
+      </div>
  
+    </section>
 
     <footer>
       <strong>Derryth Nash</strong><br>
       <a href="mailto:derrythnash@gmail.com" style="color:var(--primary);text-decoration:underline;">derrythnash@gmail.com</a>
     </footer>
- 
+  </div>
 </body>
 </html>

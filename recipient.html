@@ -38,7 +38,7 @@
       margin-bottom: 28px;
     }
     .btn {
-      display: inline-block;
+      display: block;
       background-color: #5d8aa8;
       color: #ffffff;
       font-size: 16px;
@@ -46,7 +46,20 @@
       text-decoration: none;
       padding: 14px 32px;
       border-radius: 12px;
-      margin-bottom: 16px;
+      margin-bottom: 12px;
+      width: 100%;
+    }
+    .btn-outline {
+      display: block;
+      background-color: #ffffff;
+      color: #5d8aa8;
+      font-size: 16px;
+      font-weight: 700;
+      text-decoration: none;
+      padding: 14px 32px;
+      border-radius: 12px;
+      border: 2px solid #5d8aa8;
+      margin-bottom: 24px;
       width: 100%;
     }
     .sub {
@@ -65,10 +78,32 @@
       delivered to you every morning.<br /><br />
       To read your quote, download the Daily Whispers app.
     </p>
-    <a class="btn" href="https://apps.apple.com/app/id6755615451">
+
+    <a class="btn" id="appStoreBtn" href="https://apps.apple.com/app/id6741078074">
       Download on the App Store
     </a>
-    <p class="sub">Already have the app? Open it to see today's quote.</p>
+
+    <a class="btn-outline" id="openAppBtn" href="#">
+      Already have the app? Open it now
+    </a>
+
+    <p class="sub">Your quote is waiting for you inside the app.</p>
   </div>
+
+  <script>
+    // Read the token from the URL
+    const params = new URLSearchParams(window.location.search);
+    const token = params.get('token');
+
+    const openAppBtn = document.getElementById('openAppBtn');
+
+    if (token) {
+      // Set the open-in-app button to use the custom scheme with the token
+      openAppBtn.href = 'dailywhispers://recipient?token=' + encodeURIComponent(token);
+    } else {
+      // No token — hide the open button, it won't work without one
+      openAppBtn.style.display = 'none';
+    }
+  </script>
 </body>
 </html>

@@ -1,1 +1,11 @@
-
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "W5ZY4ZJ226.com.dailywhispers.app",
+        "paths": ["/recipient*"]
+      }
+    ]
+  }
+}

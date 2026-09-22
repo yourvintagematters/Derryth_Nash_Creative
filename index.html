@@ -68,4 +68,178 @@
 
   .service {
     background: var(--neutral);
-    border-top: 
+    border-top: 12px solid var(--accent);
+    border-radius: 8px;
+    padding: 1em;
+    text-align: center;
+  }
+
+  .service h2 {
+    font-size: 1.2em;
+    color: var(--primary);
+    margin: 0 0 0.4em 0;
+  }
+
+  .service h3 {
+    font-size: .8em;
+    color: var(--text);
+    margin-bottom: 0.1em;
+    font-style: italic;
+    font-weight: 300;
+  }
+
+  .service .desc {
+    font-size: .75em;
+    color: var(--text);
+    margin-bottom: 0.8em;
+  }
+
+  .service-img {
+    max-width: 100%;
+    max-height: 135px;
+    border-radius: 6px;
+    margin-top: 0.5em;
+    object-fit: cover;
+  }
+
+  .contact-btn {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 10px 20px;
+    background-color: var(--accent);
+    color: var(--text);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+
+  .contact-btn:hover {
+    background-color: var(--light);
+    color: var(--text);
+  }
+
+  footer {
+    text-align: center;
+    background: var(--card);
+    padding: 2em 0 1em 0;
+    margin-top: 2em;
+    border-top: 4px solid var(--primary);
+    font-size: .8em;
+    color: var(--primary);
+  }
+
+  /* Mobile layout */
+  @media (max-width: 700px) {
+    .services {
+      grid-template-columns: 1fr;
+    }
+    .headings {
+      grid-template-columns: 1fr;
+    }
+  }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <img src="logo_white_bground.jpg" alt="Derryth Nash Creative Logo" class="logo">
+  <div class="header-line"></div>
+
+  <section class="headings">
+    <h1>Music</h1>
+    <h1>Art</h1>
+    <h1>Connection</h1>
+  </section>
+</header>
+
+<section class="services">
+
+  <div class="service">
+    <h2>Live Music</h2>
+    <h3>Acoustic warmth for moments that matter.</h3>
+    <div class="desc">
+      Providing an enjoyable atmosphere to any event with their live music, Derryth Nash (vocals) and Dino Ciuffetelli (Acoustic Guitar) deliver a diverse range of covers in their own style. Sneak Peak 
+      <a href="Videos/From_The_Start.mp4" target="_blank" rel="noopener noreferrer">"From The Start"</a> 
+      or 
+      <a href="Videos/shes_not_there.mov" target="_blank" rel="noopener noreferrer">"She's Not There"</a>
+    </div>
+    <img src="Images/photo.jpg" alt="Acoustic Duo" class="service-img">
+    <img src="Images/DandDlogowhite.png" alt="Acoustic Duo" class="service-img">
+    <a href="mailto:derrythnash@gmail.com?subject=Live%20Music%20Enquiry" class="contact-btn">Contact</a>
+  </div>
+
+  <div class="service">
+    <h2>Creative Workshops</h2>
+    <h3>Hands‑on sessions that spark imagination and build confidence.</h3>
+    <div class="desc">
+      Derryth loves inspiring groups and individuals with hands‑on creative workshops designed to unlock imagination, encourage self‑expression, and build confidence through creative play. What 
+      <a href="Videos/Spilt_Wine_feedback_video.mp4">customers say</a>
+    </div>
+    <img src="Artwork/Screenshot_birds.png" alt="Workshop facilitation" class="service-img">
+    <img src="Artwork/Screenshot_doodling.png" alt="Workshop facilitation" class="service-img">
+    <a href="mailto:derrythnash@gmail.com?subject=Creative%20Workshop%20Enquiry" class="contact-btn">Contact</a>
+  </div>
+
+  <div class="service">
+    <h2>Hug Therapy</h2>
+    <h3>Feel the magic of human touch.</h3>
+    <div class="desc">
+      Sharing the love of human connection through meaningful one‑on‑one sessions, or set up a hug stall at your next event to create warmth and a memorable sense of belonging.
+    </div>
+    <img src="Images/Screenshot_hug2.png" alt="Hug Therapy" class="service-img">
+    <img src="Images/Screenshot_hug3.png" alt="Hug Therapy" class="service-img">
+    <a href="mailto:derrythnash@gmail.com?subject=Hug%20Therapy%20Enquiry" class="contact-btn">Contact</a>
+  </div>
+
+  <div class="service">
+    <h2>Home Staging</h2>
+    <h3>Stage to sell—using what you already own.</h3>
+    <div class="desc">
+      Stress less when selling your home. By expertly staging your property with your existing furniture, you save money, stay comfortable, and showcase your space at its very best. General Styling sessions also available.
+    </div>
+    <img src="Images/IMG_4855.PNG" alt="Home staging example" class="service-img">
+    <img src="Images/IMG_4857.PNG" alt="Home staging example" class="service-img">
+    <a href="mailto:derrythnash@gmail.com?subject=Home%20Staging%20Enquiry" class="contact-btn">Contact</a>
+  </div>
+
+  <div class="service">
+    <h2>Artist & Creator</h2>
+    <div class="desc">
+      <a href="Artworks.html" target="_blank">Artwork For Sale</a>
+    </div>
+    <h3>Vibrant, soulful pieces with a musical or natural heartbeat.</h3>
+    <div class="desc">
+      Incorporating my love of music into visual creations, Derryth has a range of artworks and is also always happy to create something uniquely special just for you by request.
+    </div>
+    <img src="Artwork/Veronica.jpg" alt="Sample artwork" class="service-img">
+    <img src="Artwork/feels_like_home.jpg" alt="Sample artwork" class="service-img">
+    <img src="Artwork/Dragonflies.jpg" alt="Sample artwork" class="service-img">
+    <img src="Artwork/IMG_1458.JPG" alt="Sample artwork" class="service-img">
+    <a href="mailto:derrythnash@gmail.com?subject=Art%20Sale%20Enquiry" class="contact-btn">Contact</a>
+  </div>
+
+  <div class="service">
+    <h2>Daily Whispers</h2>
+    <div class="desc">App currently under construction</div>
+    <h3>Send someone a whispering reminder of love — every day.</h3>
+    <div class="desc">
+      Creator of Daily Whispers, a beautiful and touching gift app designed to send someone a daily quote, promoting love, connection, and well-being through thoughtful daily inspiration.
+    </div>
+    <img src="DailyWhisper/Screenshot_home.png" alt="Daily Whispers App screenshot" class="service-img">
+    <img src="DailyWhisper/Screenshot_funny.png" alt="Daily Whispers App screenshot" class="service-img">
+    <a href="mailto:derrythnash@gmail.com?subject=Daily%20Whispers%20Enquiry" class="contact-btn">Contact</a>
+  </div>
+
+</section>
+
+<footer>
+  <strong>Derryth Nash</strong><br>
+  <a href="mailto:derrythnash@gmail.com" style="color:var(--primary);text-decoration:underline;">
+    derrythnash@gmail.com
+  </a>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Derryth Nash Creative – Artworks</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Love+Light&display=swap" rel="stylesheet">
+
+  <style>
+  :root {
+    --primary: #b30051;
+    --accent: #a8c41d;
+    --light: #d6adb9;
+    --neutral: #dedcd0;
+    --text: #222;
+    --card: #fff;
+  }
+
+  body {
+    margin: 0;
+    font-family: Verdana, sans-serif;
+    background: var(--card);
+    color: var(--text);
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  /* --- LAYOUT WITH SIDEBAR --- */
+  .layout {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    min-height: 100vh;
+  }
+
+  .sidebar {
+    background: var(--neutral);
+    border-right: 4px solid var(--primary);
+    padding: 2em 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .sidebar a {
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    color: var(--primary);
+    padding: .5em 0;
+    transition: color .3s ease;
+  }
+
+  .sidebar a:hover {
+    color: var(--accent);
+  }
+
+  .main-content {
+    padding: 0 1em;
+  }
+
+  /* --- HEADER --- */
+  header {
+    text-align: center;
+    padding: 0;
+  }
+
+  .logo {
+    max-width: 450px;
+    margin: 0.2em auto 0 auto;
+    display: block;
+  }
+
+  .headings {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: .5em;
+  }
+
+  .headings h1 {
+    font-family: "Love Light", cursive;
+    color: var(--primary);
+    font-size: 4.5em;
+    margin: 0;
+  }
+
+  /* --- INTRO TEXT --- */
+  .intro {
+    max-width: 900px;
+    margin: 1em auto;
+    text-align: left;
+    font-size: .85em;
+    line-height: 1.5em;
+  }
+
+  /* --- ARTWORK GRID --- */
+  .services {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5em;
+    padding: .2em;
+  }
+
+  .service {
+    background: var(--neutral);
+    border-top: 12px solid var(--accent);
+    border-radius: 8px;
+    padding: 1em;
+    text-align: center;
+  }
+
+  .service h2 {
+    font-size: 1.2em;
+    color: var(--primary);
+    margin: 0 0 0.4em 0;
+  }
+
+  .service h3 {
+    font-size: .8em;
+    color: var(--text);
+    margin-bottom: 0.1em;
+    font-style: italic;
+    font-weight: 300;
+  }
+
+  .service .desc {
+    font-size: .75em;
+    color: var(--text);
+    margin-bottom: 0.8em;
+  }
+
+  .service-img {
+    max-width: 100%;
+    max-height: 135px;
+    border-radius: 6px;
+    margin-top: 0.5em;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  .service-img:hover {
+    transform: scale(3.5);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  }
+
+  /* --- FOOTER --- */
+  footer {
+    text-align: center;
+    background: var(--card);
+    padding: 2em 0 1em 0;
+    margin-top: 2em;
+    border-top: 4px solid var(--primary);
+    font-size: .8em;
+    color: var(--primary);
+  }
+
+  .contact-btn {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 10px 20px;
+    background-color: var(--accent);
+    color: var(--text);
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+
+  .contact-btn:hover {
+    background-color: var(--light);
+  }
+
+  /* --- MOBILE --- */
+  @media (max-width: 700px) {
+    .layout {
+      grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+      flex-direction: row;
+      justify-content: center;
+      border-right: none;
+      border-bottom: 4px solid var(--primary);
+    }
+
+    .sidebar a {
+      padding: 1em;
+    }
+
+    .services {
+      grid-template-columns: 1fr;
+    }
+
+    .headings {
+      grid-template-columns: 1fr;
+    }
+
+    .headings h1 {
+      font-size: 2em;
+    }
+  }
+  </style>
+</head>
+
+<body>
+
+<div class="layout">
+
+  <!-- SIDEBAR -->
+  <nav class="sidebar">
+    <a href="index.html">Home</a>
+    <a href="Artworks.html">Artworks</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <div class="main-content">
+
+    <header>
+      <a href="index.html">
+        <img src="logo_white_bground.jpg" alt="Derryth Nash Creative Logo" class="logo">
+      </a>
+    </header>
+
+    <div class="intro">
+      <p>Hug therapy is a gentle, evidence‑supported practice that uses safe, consensual touch to calm the nervous system and nurture emotional wellbeing. Research shows that warm physical contact can lower cortisol, increase oxytocin, regulate heart rate, and create a sense of grounded safety. In one‑on‑one sessions, this becomes a quiet, restorative experience where clients can soften, breathe more deeply, and feel genuinely held. The focus is on comfort, connection, and creating a space where people can pause, settle, and reconnect with their own sense of ease.</p>
+
+<p>At events, our Free Hug Giver brings these same benefits into a joyful, community‑centred setting. A simple hug can brighten someone’s day, ease social anxiety, and spark a moment of human warmth that ripples through the crowd. These interactions help create a welcoming atmosphere, reminding people that kindness is contagious and connection doesn’t have to be complicated. Whether offered privately or shared publicly, hug therapy invites people to feel supported, uplifted, and part of something gently human.</p>
+
+          
+    </div>
+
+    <section class="headings">
+      <h1>Hug Therapy</h1>
+     
+      
+    </section>
+
+   
+
+    <!-- ARTWORK GRID -->
+    <section class="services">
+
+      <!-- ⭐ SERVICES BELOW ⭐ -->
+
+      <div class="service">
+        <h2>ive music for your event</h2>
+        <h3>"Joy blooms easily in the presence of a good melody."</h3>
+        <div class="desc">Providing an inviting atmosphere for any event, Derryth Nash (vocals) and Dino Ciuffetelli (acoustic guitar) deliver a soulful blend of classic and contemporary covers, reimagined with their signature acoustic style. Their chemistry, musicianship, and easy warmth create a beautiful backdrop for weddings, private functions, community gatherings, and intimate venues — offering live music that feels both familiar and freshly inspired.</div>
+        
+          <img src="Images/Duo1.jpg"" class="service-img">
+               <a href="mailto:derrythnash@gmail.com?subject=Art%20Enquiry" class="contact-btn">Contact</a>
+      </div>
+
+ 
+      <div class="service">
+        <h2>Hug Therapy sessions</h2>
+        <h3>“In a world of noise, human touch is the simplest form of calm.”</h3>
+        <div class="desc">Hug therapy is a gentle, evidence‑supported practice that uses safe, consensual touch to calm the nervous system and nurture emotional wellbeing. Research shows that warm physical contact can lower cortisol, increase oxytocin, regulate heart rate, and create a sense of grounded safety. In one‑on‑one sessions, this becomes a quiet, restorative experience where clients can soften, breathe more deeply, and feel genuinely held. The focus is on comfort, connection, and creating a space where people can pause, settle, and reconnect with their own sense of ease.
+
+          </div>
+
+        <div class="desc">At events, our Free Hug Giver brings these same benefits into a joyful, community‑centred setting. A simple hug can brighten someone’s day, ease social anxiety, and spark a moment of human warmth that ripples through the crowd. These interactions help create a welcoming atmosphere, reminding people that kindness is contagious and connection doesn’t have to be complicated. Whether offered privately or shared publicly, hug therapy invites people to feel supported, uplifted, and part of something gently human.
+
+          </div>
+                  <img src="Images/hug.jpeg" class="service-img">
+        </a><br>
+        <a href="mailto:derrythnash@gmail.com?subject=Art%20Enquiry" class="contact-btn">Contact</a>
+      </div>
+
+      
+
+    </section>
+
+    <footer>
+      <strong>Derryth Nash</strong><br>
+      <a href="mailto:derrythnash@gmail.com" style="color:var(--primary);text-decoration:underline;">
+        derrythnash@gmail.com
+      </a>
+    </footer>
+
+  </div><!-- end main-content -->
+
+</div><!-- end layout -->
+
+</body>
+</html>

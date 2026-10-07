@@ -10,197 +10,202 @@
   <link href="https://fonts.googleapis.com/css2?family=Love+Light&display=swap" rel="stylesheet">
 
   <style>
-  :root {
-    --primary: #b30051;
-    --accent: #a8c41d;
-    --light: #d6adb9;
-    --neutral: #f4f2e7;
-    --text: #222;
-    --card: #fff;
-  }
+ :root {
+  --primary: #b30051;
+  --accent: #a8c41d;
+  --light: #d6adb9;
+  --neutral: #f4f2e7;
+  --text: #222;
+  --card: #fff;
+}
 
+body {
+  margin: 0;
+  font-family: Verdana, sans-serif;
+  background: var(--card);
+  color: var(--text);
+}
 
-  body {
-    margin: 0;
-    font-family: Verdana, sans-serif;
-    background: var(--card);
-    color: var(--text);
-  }
+/* Smaller paragraph text */
+p {
+  font-size: 0.85em;
+  line-height: 1.5;
+}
 
-        .section-link {
+.section-link {
   text-decoration: none;
   color: inherit;
   display: block;
 }
 
-  /* --- LAYOUT WITH SIDEBAR --- */
+/* --- LAYOUT WITH SIDEBAR --- */
+.layout {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  min-height: 100vh;
+}
+
+.sidebar {
+  background: var(--neutral);
+  padding: 2em 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.sidebar a {
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  color: var(--primary);
+  text-decoration: none;
+  padding: .5em 0;
+  transition: color .3s ease;
+}
+
+.sidebar a:hover {
+  color: var(--accent);
+}
+
+.main-content {
+  padding: 0 1em;
+}
+
+/* --- HEADER --- */
+header {
+  text-align: center;
+  padding: 0;
+}
+
+.header-line {
+  width: 100%;
+  height: 4px;
+  background: var(--accent);
+  margin: 1em 0;
+}
+
+.logo {
+  max-width: 450px;
+  margin: 0.2em auto 0;
+  display: block;
+}
+
+.headings {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  gap: .5em;
+}
+
+.headings h1 {
+  font-family: "Love Light", cursive;
+  color: var(--primary);
+  font-size: 4.5em;
+  margin: 0;
+}
+
+/* --- SERVICES GRID --- */
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5em;
+  padding: .2em;
+}
+
+.service {
+  background: var(--neutral);
+  border-top: 12px solid var(--accent);
+  border-radius: 8px;
+  padding: 1em;
+  text-align: center;
+}
+
+.service h2 {
+  font-size: 1.2em;
+  color: var(--primary);
+  margin: 0 0 .4em;
+}
+
+.service h3 {
+  font-size: .8em;
+  color: var(--text);
+  margin-bottom: .1em;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.service .desc {
+  font-size: .75em;
+  color: var(--text);
+  margin-bottom: .8em;
+}
+
+.service-img {
+  max-width: 100%;
+  max-height: 125px;
+  border-radius: 6px;
+  margin-top: .5em;
+  object-fit: cover;
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.service-img:hover {
+  transform: scale(1.5);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.contact-btn {
+  display: inline-block;
+  margin-top: 1em;
+  padding: 10px 20px;
+  background-color: var(--accent);
+  color: var(--text);
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color .3s ease;
+}
+
+.contact-btn:hover {
+  background-color: var(--light);
+  color: var(--text);
+}
+
+/* --- FOOTER --- */
+footer {
+  text-align: center;
+  background: var(--card);
+  padding: 2em 0 1em;
+  margin-top: 2em;
+  border-top: 4px solid var(--primary);
+  font-size: .8em;
+  color: var(--primary);
+}
+
+/* --- MOBILE --- */
+@media (max-width: 700px) {
   .layout {
-    display: grid;
-    grid-template-columns: 220px 1fr;
-    min-height: 100vh;
+    grid-template-columns: 1fr;
   }
 
   .sidebar {
-    background: var(--neutral);
-    padding: 2em 1em;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
+    flex-direction: row;
+    justify-content: center;
+    border-bottom: 4px solid var(--primary);
   }
 
   .sidebar a {
-    font-family: Inter, sans-serif;
-    font-weight: 500;
-    color: var(--primary);
-    text-decoration: none;
-    padding: .5em 0;
-    transition: color .3s ease;
+    padding: 1em;
   }
 
-  .sidebar a:hover {
-    color: var(--accent);
-  }
-
-  .main-content {
-    padding: 0 1em;
-  }
-
-  /* --- HEADER --- */
-  header {
-    text-align: center;
-    padding: 0;
-  }
-
-  .header-line {
-    width: 100%;
-    height: 4px;
-    background: var(--accent);
-    margin: 1em 0;
-  }
-
-  .logo {
-    max-width: 450px;
-    margin: 0.2em auto 0 auto;
-    display: block;
+  .services {
+    grid-template-columns: 1fr;
   }
 
   .headings {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    text-align: center;
-    gap: .5em;
+    grid-template-columns: 1fr;
   }
+}
 
-  .headings h1 {
-    font-family: "Love Light", cursive;
-    color: var(--primary);
-    font-size: 4.5em;
-    margin: 0;
-  }
-
-  /* --- SERVICES GRID --- */
-  .services {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1.5em;
-    padding: .2em;
-  }
-
-  .service {
-    background: var(--neutral);
-    border-top: 12px solid var(--accent);
-    border-radius: 8px;
-    padding: 1em;
-    text-align: center;
-  }
-
-  .service h2 {
-    font-size: 1.2em;
-    color: var(--primary);
-    margin: 0 0 0.4em 0;
-  }
-
-  .service h3 {
-    font-size: .8em;
-    color: var(--text);
-    margin-bottom: 0.1em;
-    font-style: italic;
-    font-weight: 300;
-  }
-
-  .service .desc {
-    font-size: .75em;
-    color: var(--text);
-    margin-bottom: 0.8em;
-  }
-
-  .service-img {
-    max-width: 100%;
-    max-height: 125px;
-    border-radius: 6px;
-    margin-top: 0.5em;
-    object-fit: cover;
-  }
-
-         .service-img:hover {
-    transform: scale(1.5);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-  }
-
-  .contact-btn {
-    display: inline-block;
-    margin-top: 1em;
-    padding: 10px 20px;
-    background-color: var(--accent);
-    color: var(--text);
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-  }
-
-  .contact-btn:hover {
-    background-color: var(--light);
-    color: var(--text);
-  }
-
-
-  /* --- FOOTER --- */
-  footer {
-    text-align: center;
-    background: var(--card);
-    padding: 2em 0 1em 0;
-    margin-top: 2em;
-    border-top: 4px solid var(--primary);
-    font-size: .8em;
-    color: var(--primary);
-  }
-
-  /* --- MOBILE --- */
-  @media (max-width: 700px) {
-    .layout {
-      grid-template-columns: 1fr;
-    }
-
-    .sidebar {
-      flex-direction: row;
-      justify-content: center;
-      border-right: none;
-      border-bottom: 4px solid var(--primary);
-    }
-
-    .sidebar a {
-      padding: 1em;
-    }
-
-    .services {
-      grid-template-columns: 1fr;
-    }
-
-    .headings {
-      grid-template-columns: 1fr;
-    }
-  }
   </style>
 </head>
 
@@ -230,7 +235,7 @@
 
     <div class="intro">
       <p>Derryth Nash is a purpose‑driven creator, facilitator, and musician who believes deeply in human connection, community, and the simple things in life. With a background in Health Education and extensive experience supporting people across the Mental Health, Disability, and Aged Care sectors, she brings an enthusiastic and human‑centred approach to everything she does. Her work is grounded in kindness, creativity, and a passion and commitment to be part of the solution in a fast, modern world that often forgets what really matters.</p>
- <p>< a href="About.html>More about Derryth</a></p>
+ <p>< a href="About.html">More about Derryth</a></p>
           </div>
 
     <section class="headings">

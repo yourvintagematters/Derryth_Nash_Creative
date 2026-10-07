@@ -183,28 +183,101 @@ footer {
 
 /* --- MOBILE --- */
 @media (max-width: 700px) {
+
+  /* Layout collapses cleanly */
   .layout {
     grid-template-columns: 1fr;
   }
 
+  /* Sidebar becomes horizontal and scrollable */
   .sidebar {
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
+    overflow-x: auto;
+    gap: 1em;
+    padding: 1em;
     border-bottom: 4px solid var(--primary);
   }
 
   .sidebar a {
-    padding: 1em;
+    padding: 0.8em;
+    font-size: 0.9em;
+    white-space: nowrap;
   }
 
-  .services {
-    grid-template-columns: 1fr;
+  /* Logo resizes nicely */
+  .logo {
+    max-width: 250px;
+    margin-top: 0.5em;
   }
 
+  /* Headings resize */
   .headings {
     grid-template-columns: 1fr;
   }
+
+  .headings h1 {
+    font-size: 2.4em;
+  }
+
+  /* Intro paragraph spacing */
+  .intro p {
+    font-size: 0.9em;
+    line-height: 1.45;
+    padding: 0 0.8em;
+  }
+
+  /* Services stack vertically */
+  .services {
+    grid-template-columns: 1fr;
+    gap: 1.4em;
+    padding: 0.5em;
+  }
+
+  /* Service cards breathe better */
+  .service {
+    padding: 1.3em;
+    border-top-width: 10px;
+  }
+
+  .service h2 {
+    font-size: 1.15em;
+  }
+
+  .service h3 {
+    font-size: 0.78em;
+  }
+
+  .service .desc {
+    font-size: 0.85em;
+  }
+
+  /* Images scale safely */
+  .service-img {
+    max-height: 160px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  /* Disable hover zoom on mobile (prevents jumpiness) */
+  .service-img:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  /* Buttons resize */
+  .contact-btn {
+    padding: 10px 18px;
+    font-size: 0.95em;
+  }
+
+  /* Footer text adjusts */
+  footer {
+    font-size: 0.75em;
+    padding: 1.5em 0;
+  }
 }
+
 
   </style>
 </head>
